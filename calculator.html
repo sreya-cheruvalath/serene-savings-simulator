@@ -60,28 +60,68 @@
         
         <div class="input-group">
             <label for="currentAge">Current Age</label>
-            <input type="number" id="currentAge" value="30">
+            <input 
+                type="text" 
+                id="currentAge" 
+                placeholder="Enter your current age"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            >
             
             <label for="retirementAge">Retirement Age</label>
-            <input type="number" id="retirementAge" value="65">
+            <input 
+                type="text" 
+                id="retirementAge" 
+                placeholder="Enter your retirement age"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            >
             
             <label for="currentIncome">Current Annual Income ($)</label>
-            <input type="number" id="currentIncome" value="50000">
+            <input 
+                type="text" 
+                id="currentIncome" 
+                placeholder="Enter your annual income"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            >
             
             <label for="currentSavings">Current Savings ($)</label>
-            <input type="number" id="currentSavings" value="10000">
+            <input 
+                type="text" 
+                id="currentSavings" 
+                placeholder="Enter your current savings"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            >
             
             <label for="monthlySavings">Monthly Savings ($)</label>
-            <input type="number" id="monthlySavings" value="500">
+            <input 
+                type="text" 
+                id="monthlySavings" 
+                placeholder="Enter your monthly savings"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            >
             
             <label for="expectedReturn">Expected Annual Return (%)</label>
-            <input type="number" id="expectedReturn" value="7" step="0.1">
+            <input 
+                type="text" 
+                id="expectedReturn" 
+                placeholder="Enter expected return rate"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 46)"
+            >
             
             <label for="inflationRate">Inflation Rate (%)</label>
-            <input type="number" id="inflationRate" value="2" step="0.1">
+            <input 
+                type="text" 
+                id="inflationRate" 
+                placeholder="Enter inflation rate"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 46)"
+            >
             
             <label for="retirementIncome">Desired Retirement Income (% of current income)</label>
-            <input type="number" id="retirementIncome" value="80">
+            <input 
+                type="text" 
+                id="retirementIncome" 
+                placeholder="Enter desired retirement income percentage"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            >
         </div>
         
         <button onclick="calculateRetirement()">Calculate</button>
